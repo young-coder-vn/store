@@ -60,6 +60,10 @@ spring:
     url: r2dbc:postgresql://localhost:5432/store
     username: store
     password:
+    pool:
+      enabled: true
+      initial-size: 5
+      max-size: 20
   thymeleaf:
     cache: false
   sleuth:
