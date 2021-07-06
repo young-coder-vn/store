@@ -3,8 +3,8 @@ version: '3.8'
 services:
   store-postgresql:
     image: postgres:13.3
-    # volumes:
-    #   - ~/volumes/jhipster/store/postgresql/:/var/lib/postgresql/data/
+    volumes:
+      - C:/docker/volumes/postgres/:/var/lib/postgresql/data/
     environment:
       - POSTGRES_USER=store
       - POSTGRES_PASSWORD=
